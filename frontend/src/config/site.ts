@@ -1,0 +1,62 @@
+export const siteConfig = {
+  name: "Vape Shop Gurgaon | Premium Vapes & Same Day Delivery",
+  shortName: "Vape Shop Gurgaon",
+  description:
+    "Looking for the best Vape Shop in Gurgaon? Authentic disposable vapes, pod systems, coils & e-liquids with instant 30-60 min delivery across DLF, Cyber City, Golf Course Road, and all Gurgaon sectors.",
+  url: "https://vapeshopgurgaon.in", // Replace with production domain
+  ogImage: "https://vapeshopgurgaon.in/og-image.jpg",
+  phone: "+91 92510 97294",
+  whatsappNumber: "919251097294",
+  whatsappMessage: "Hi, I want to check vape availability and same-day delivery in Gurgaon.",
+  email: "support@vapeshopgurgaon.in",
+  address: {
+    streetAddress: "Shop No. 12, Ground Floor, Galleria Market, DLF Phase 4",
+    addressLocality: "Gurgaon",
+    addressRegion: "Haryana",
+    postalCode: "122002",
+    addressCountry: "IN",
+  },
+  geo: {
+    latitude: 28.4682,
+    longitude: 77.0818,
+  },
+  openingHours: [
+    "Mo-Su 10:00-23:30",
+  ],
+  priceRange: "₹₹",
+  rating: {
+    ratingValue: "4.9",
+    reviewCount: "480",
+  },
+  keywords: [
+    "Vape Shop Gurgaon",
+    "Vape Store Gurgaon",
+    "Best Vape Shop DLF Gurgaon",
+    "Vape Delivery Gurgaon",
+    "Disposable Vape Gurgaon",
+    "Elf Bar Gurgaon",
+    "Iget Vape Gurgaon",
+    "Geek Bar Gurgaon",
+    "Vape Shop Near Me Gurgaon",
+    "Same Day Vape Delivery Cyber City",
+    "Vape Shop Golf Course Road",
+    "E-Cigarette Store Gurugram",
+  ],
+  localities: [
+    { name: "DLF Phase 1, 2, 3, 4, 5", slug: "dlf-phases" },
+    { name: "Cyber City & Cyber Hub", slug: "cyber-city" },
+    { name: "Golf Course Road", slug: "golf-course-road" },
+    { name: "Golf Course Extension", slug: "golf-course-extension" },
+    { name: "MG Road & IFFCO Chowk", slug: "mg-road" },
+    { name: "Sector 29 & Sector 43", slug: "sector-29" },
+    { name: "Sector 56 & 57", slug: "sector-56-57" },
+    { name: "Sohna Road & Subhash Chowk", slug: "sohna-road" },
+    { name: "Ambience Island", slug: "ambience-island" },
+  ],
+  categories: [
+    { name: "Disposable Vapes", slug: "disposable-vapes", count: "50+ Flavors" },
+    { name: "Pod Systems & Kits", slug: "pod-systems", count: "Top Brands" },
+    { name: "E-Liquids & Nic Salts", slug: "e-liquids", count: "Premium Blends" },
+    { name: "Replacement Coils & Pods", slug: "coils-accessories", count: "100% Genuine" },
+  ],
+};
