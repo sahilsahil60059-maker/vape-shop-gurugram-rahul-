@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { seoConfig } from "@/config/seo";
+import { gurgaon50Locations } from "@/config/locations";
 import {
   MapPin,
   Clock,
@@ -14,16 +15,16 @@ import {
 import type { BreadcrumbList, ItemList, WithContext } from "schema-dts";
 
 export const metadata: Metadata = {
-  title: "Vape Shop Gurgaon Locations | Store Locations & 30-Min Express Hubs",
+  title: "Vape Shop Gurgaon Locations | 50+ Sector Hubs (30-Min Delivery)",
   description:
-    "Explore Vape Shop Gurgaon delivery hubs across DLF Phase 1-5, Cyber City, Golf Course Road, Sohna Road, and all 115+ sectors. Guaranteed 25-45 mins doorstep courier dispatch.",
+    "Explore Vape Shop Gurgaon delivery hubs across 50+ sectors including DLF Phase 1-5, Cyber City, Golf Course Road, Sohna Road, and all Gurgaon pin codes. 20-45 mins doorstep delivery.",
   alternates: {
     canonical: `${seoConfig.siteUrl}/locations`,
   },
   openGraph: {
-    title: "Vape Shop Gurgaon Locations — Store Locations & Express Hubs",
+    title: "Vape Shop Gurgaon Locations — 50+ Sector Hubs & Express Delivery",
     description:
-      "Rapid 25-45 minutes express vape delivery across 12 dedicated Gurgaon corridors. 100% genuine QR-verified vapes & discreet packaging.",
+      "Rapid 20-45 minutes express vape delivery across 50 dedicated Gurgaon corridors. 100% genuine QR-verified vapes & discreet packaging.",
     url: `${seoConfig.siteUrl}/locations`,
     siteName: seoConfig.shortName,
     locale: "en_IN",
@@ -33,15 +34,15 @@ export const metadata: Metadata = {
         url: `${seoConfig.siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Vape Shop Gurgaon Locations - Same Day Express Hubs",
+        alt: "Vape Shop Gurgaon Locations - 50+ Express Hubs",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vape Shop Gurgaon Locations | Express Hubs",
+    title: "Vape Shop Gurgaon Locations | 50+ Express Hubs",
     description:
-      "Rapid 25-45 mins doorstep vape delivery across DLF, Cyber City, Golf Course Road & all Gurugram sectors.",
+      "Rapid 20-45 mins doorstep vape delivery across 50+ Gurgaon sectors and corridors.",
     images: [`${seoConfig.siteUrl}/og-image.jpg`],
   },
 };
@@ -59,139 +60,6 @@ function WhatsAppIcon({ className = "w-3.5 h-3.5" }: { className?: string }) {
     </svg>
   );
 }
-
-interface HubItem {
-  id: string;
-  name: string;
-  timing: string;
-  subHub: string;
-  description: string;
-  pincodes: string[];
-  keyAreas: string;
-}
-
-const gurgaonHubs: HubItem[] = [
-  {
-    id: "dlf-phase-1-5",
-    name: "DLF Phase 1-5",
-    timing: "20 - 35 Minutes",
-    subHub: "Galleria Market & Cyber Hub Express Line",
-    description:
-      "Looking for a verified authentic vape shop in DLF Phase 1, 2, 3, 4, or 5? Vape Shop Gurgaon provides lightning-fast 20 to 35 minutes doorstep delivery for all premium disposables and pods.",
-    pincodes: ["122002", "122008", "122009"],
-    keyAreas: "Galleria Market, Supermart 1 & 2, Hamilton Court, DLF Club 5, Arjun Marg, Sikanderpur, Phase 1 to 5",
-  },
-  {
-    id: "cyber-city",
-    name: "Cyber City & Cyber Hub",
-    timing: "20 - 30 Minutes",
-    subHub: "Cyber City Corporate Dispatch Hub",
-    description:
-      "Fast delivery directly to DLF Cyber City corporate towers, Cyber Green, Infinity Towers, and Belvedere Park with plain, discreet packaging and quick doorstep handover.",
-    pincodes: ["122002", "122008"],
-    keyAreas: "Building 5, 8, 10, 14, Belvedere Towers, Cyber Hub Boulevard, DLF Phase 2 Metro, Gateway Tower",
-  },
-  {
-    id: "golf-course-road",
-    name: "Golf Course Road",
-    timing: "25 - 35 Minutes",
-    subHub: "One Horizon Center Dispatch Corridor",
-    description:
-      "Serving high-end luxury residences and commercial hubs along Golf Course Road with 100% genuine QR-verified vapes, coils, and international e-liquids.",
-    pincodes: ["122002", "122003", "122011"],
-    keyAreas: "One Horizon Center, DLF Magnolias, Aralias, Camellias, Sector 42-43 Metro, Central Park 1, Genpact Chowk",
-  },
-  {
-    id: "golf-course-extension",
-    name: "Golf Course Extension",
-    timing: "30 - 40 Minutes",
-    subHub: "Sector 56-65 Express Corridor",
-    description:
-      "Rapid delivery across Golf Course Extension road societies, M3M Urbana, Worldmark Gurugram, and Sector 56 Huda Market with real-time rider tracking.",
-    pincodes: ["122011", "122101", "122102"],
-    keyAreas: "M3M Golfestate, Pioneer Urban, Worldmark, IREO Grand Arch, Sector 56 Market, Sector 62, Sector 65",
-  },
-  {
-    id: "sector-29",
-    name: "Sector 29 Market",
-    timing: "25 - 35 Minutes",
-    subHub: "Sector 29 Entertainment Hub",
-    description:
-      "Delivering to Sector 29 market, dining avenues, hotels, and Leisure Valley park vicinity with instant 25-minute dispatch and UPI / Cash on Delivery payments.",
-    pincodes: ["122001", "122002"],
-    keyAreas: "Sector 29 Market, Leisure Valley, Kingdom of Dreams Area, IFFCO Chowk, Sector 28, Crown Plaza Area",
-  },
-  {
-    id: "sector-43-44",
-    name: "Sector 43 & 44",
-    timing: "25 - 35 Minutes",
-    subHub: "Millennium City Centre Dispatch",
-    description:
-      "Convenient same-day delivery around Huda City Centre metro, Sector 43 residential societies, Sushant Lok blocks, and corporate institutions in Sector 44.",
-    pincodes: ["122002", "122003"],
-    keyAreas: "Millennium City Metro, Sector 43, Sector 44 Institutional Area, Fortis Hospital Area, Sushant Lok 1",
-  },
-  {
-    id: "sohna-road",
-    name: "Sohna Road",
-    timing: "30 - 45 Minutes",
-    subHub: "Subhash Chowk & Sector 48-49 Hub",
-    description:
-      "Prompt vape delivery to premier residential societies along Sohna Road, Vipul Greens, Tatvam Villas, and commercial hubs like Spaze I-Tech Park.",
-    pincodes: ["122018", "122001"],
-    keyAreas: "Subhash Chowk, Vatika City, Vipul Greens, Sector 47, 48, 49, Spaze I-Tech, Malibu Towne, Central Park 2",
-  },
-  {
-    id: "mg-road",
-    name: "MG Road Area",
-    timing: "25 - 35 Minutes",
-    subHub: "MG Road Mall Corridor Express",
-    description:
-      "Ultra-fast delivery to residential complexes on MG Road, Beverly Park, Essel Towers, Heritage City, and all shopping malls along the yellow line corridor.",
-    pincodes: ["122002", "122001"],
-    keyAreas: "Essel Towers, Beverly Park 1 & 2, Heritage City, MGF Metropolitan, Sikanderpur, IFFCO Chowk Metro",
-  },
-  {
-    id: "sushant-lok",
-    name: "Sushant Lok 1-2",
-    timing: "25 - 35 Minutes",
-    subHub: "Sushant Lok Residential Hub",
-    description:
-      "Discreet and fast delivery to Sushant Lok Phase 1, Phase 2, and adjoining blocks near Vyapar Kendra, Gold Souk Mall, and Sector 52/57.",
-    pincodes: ["122002", "122003", "122011"],
-    keyAreas: "Vyapar Kendra, Gold Souk, Block A, B, C, Sector 52, Ardee City, Sushant Lok 2, Sector 57 Market",
-  },
-  {
-    id: "nirvana-country",
-    name: "Nirvana Country",
-    timing: "30 - 40 Minutes",
-    subHub: "South City 2 & Nirvana Hub",
-    description:
-      "Express courier coverage for gated villa communities in Nirvana Country, South City 2, Fresco, and Baani Square with 100% genuine QR-verified stock.",
-    pincodes: ["122018", "122003"],
-    keyAreas: "Nirvana Country Villas, South City 2, Baani Square, Unitech Fresco, Sector 50, Sector 51, Mayfield Gardens",
-  },
-  {
-    id: "ambience-island",
-    name: "Ambience Island",
-    timing: "25 - 35 Minutes",
-    subHub: "Ambience Lagoon & NH-8 Express",
-    description:
-      "Delivery to Ambience Mall residences, Leela Hotel vicinity, Belvedere Park, and luxury apartments located right on the Delhi-Gurgaon NH-8 border.",
-    pincodes: ["122002"],
-    keyAreas: "Ambience Lagoon, The Leela Ambience, DLF Gateway Tower, NH-8 Border, Shankar Chowk, Toll Plaza Vicinity",
-  },
-  {
-    id: "new-gurgaon",
-    name: "New Gurgaon (Sec 82-95)",
-    timing: "40 - 55 Minutes",
-    subHub: "Dwarka Expressway & New Gurgaon Hub",
-    description:
-      "Dedicated courier route reaching New Gurgaon townships including Vatika India Next, Town Square, Sector 82, 83, 84, 90, and Dwarka Expressway societies.",
-    pincodes: ["122004", "122051", "122505"],
-    keyAreas: "Vatika India Next, Town Square, Sector 82, 83, 84, 86, 90, 95, Sapphire 83, Sector 82A, Rampura",
-  },
-];
 
 export default function LocationsPage() {
   const breadcrumbsSchema: WithContext<BreadcrumbList> = {
@@ -217,10 +85,11 @@ export default function LocationsPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Vape Shop Gurgaon Delivery Hubs",
-    itemListElement: gurgaonHubs.map((hub, index) => ({
+    itemListElement: gurgaon50Locations.map((hub, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: `${hub.name} Vape Delivery Hub`,
+      name: `Vape Shop in ${hub.name}`,
+      url: `${seoConfig.siteUrl}/locations/${hub.slug}`,
       description: hub.description,
     })),
   };
@@ -249,14 +118,14 @@ export default function LocationsPage() {
           <span className="font-semibold text-slate-700">Gurgaon Locations</span>
         </nav>
 
-        {/* Page Header Matching Reference Image */}
+        {/* Page Header */}
         <div className="space-y-3 max-w-3xl">
           {/* Top Pill Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700 shadow-2xs">
             <Zap className="w-3.5 h-3.5 text-[#84cc16] fill-current" />
             <span>Local Express Hub Network</span>
             <span className="text-slate-400">•</span>
-            <span className="text-emerald-700 font-bold">12 Active Gurgaon Corridors</span>
+            <span className="text-emerald-700 font-bold">50 Active Gurgaon Corridors &amp; Sectors</span>
           </div>
 
           {/* Primary SEO H1 */}
@@ -269,15 +138,15 @@ export default function LocationsPage() {
 
           {/* Description */}
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-            We operate dedicated local logistics hubs across Gurugram to guarantee 25 to 45 minutes doorstep courier delivery. Select your neighborhood below to view specific pincode coverage, estimated dispatch times, and available inventory.
+            We operate 50 dedicated local logistics corridors across Gurugram to guarantee 15 to 45 minutes doorstep courier delivery. Select your neighborhood below to view specific pincode coverage, estimated dispatch times, and available inventory.
           </p>
         </div>
 
-        {/* 12 Locations Grid Matching User Reference Image */}
+        {/* 50 Locations Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-          {gurgaonHubs.map((hub) => {
+          {gurgaon50Locations.map((hub) => {
             const whatsappHubUrl = `https://wa.me/${seoConfig.whatsappNumber}?text=${encodeURIComponent(
-              `Hi, I want to order vape delivery to ${hub.name}, Gurgaon.`
+              `Hi, I want to order vape delivery to ${hub.name} (PIN: ${hub.pincode}).`
             )}`;
 
             return (
@@ -289,18 +158,20 @@ export default function LocationsPage() {
                   {/* Top Line: Title & Time Badge */}
                   <div className="flex items-center justify-between gap-2">
                     <h2 className="text-base sm:text-lg font-black text-[#192e42] tracking-tight">
-                      {hub.name}
+                      <Link href={`/locations/${hub.slug}`} className="hover:text-emerald-700 transition">
+                        {hub.name}
+                      </Link>
                     </h2>
                     <span className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">
                       <Clock className="w-3 h-3" />
-                      <span>{hub.timing}</span>
+                      <span>{hub.dispatchTime}</span>
                     </span>
                   </div>
 
                   {/* Sub-Hub Location */}
                   <div className="flex items-center gap-1.5 text-xs text-emerald-700 font-bold">
                     <MapPin className="w-3.5 h-3.5 text-[#84cc16] shrink-0" />
-                    <span>{hub.subHub}</span>
+                    <span>PIN Code: {hub.pincode}</span>
                   </div>
 
                   {/* Description */}
@@ -308,45 +179,43 @@ export default function LocationsPage() {
                     {hub.description}
                   </p>
 
-                  {/* Pincodes Covered */}
+                  {/* Key Hotspots */}
                   <div className="space-y-1 pt-1">
                     <div className="text-[10px] font-black uppercase tracking-wider text-slate-400">
-                      PINCODES COVERED:
+                      KEY HOTSPOTS COVERED:
                     </div>
                     <div className="flex flex-wrap gap-1.5">
-                      {hub.pincodes.map((pin) => (
+                      {hub.hotspots.map((hotspot, i) => (
                         <span
-                          key={pin}
-                          className="px-2 py-0.5 bg-slate-100 border border-slate-200 text-slate-700 font-mono text-[11px] font-semibold rounded"
+                          key={i}
+                          className="px-2 py-0.5 bg-slate-100 border border-slate-200 text-slate-700 text-[11px] font-semibold rounded"
                         >
-                          {pin}
+                          {hotspot}
                         </span>
                       ))}
                     </div>
                   </div>
 
-                  {/* Key Areas */}
+                  {/* Range */}
                   <div className="space-y-0.5 pt-1">
                     <div className="text-[10px] font-black uppercase tracking-wider text-slate-400">
-                      KEY AREAS:
+                      SERVICE RANGE:
                     </div>
                     <p className="text-[11px] text-slate-500 leading-snug">
-                      {hub.keyAreas}
+                      {hub.deliveryRange}
                     </p>
                   </div>
                 </div>
 
-                {/* Bottom Action: WhatsApp Fast Order Button */}
+                {/* Bottom Action: Explore Page & WhatsApp Fast Order Button */}
                 <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between gap-3">
-                  <a
-                    href={whatsappHubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href={`/locations/${hub.slug}`}
                     className="text-xs font-bold text-[#192e42] hover:text-emerald-700 transition flex items-center gap-1"
                   >
-                    <span>Explore Hub</span>
+                    <span>View Sector Page</span>
                     <span>&rarr;</span>
-                  </a>
+                  </Link>
 
                   <a
                     href={whatsappHubUrl}
@@ -368,27 +237,23 @@ export default function LocationsPage() {
         <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-1">
             <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-emerald-700">
-              <Truck className="w-4 h-4 text-[#84cc16]" />
-              <span>Full Gurugram Coverage Guarantee</span>
+              <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+              <span>Don&apos;t See Your Specific Sector Listed?</span>
             </div>
-            <h3 className="text-base sm:text-lg font-black text-[#192e42]">
-              Need delivery to a specific gated society or sector not listed above?
-            </h3>
             <p className="text-xs text-slate-600">
-              Our delivery fleet covers all 115+ sectors of Gurgaon with real-time dispatch and doorstep Cash on Delivery or UPI payments.
+              We deliver to every residential society, corporate tech park, farm, and hotel across Gurugram pin codes (122001 to 122505).
             </p>
           </div>
 
           <a
             href={`https://wa.me/${seoConfig.whatsappNumber}?text=${encodeURIComponent(
-              "Hi, I want to share my location for instant vape delivery in Gurgaon."
+              "Hi, I want to confirm if you deliver to my location in Gurgaon."
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#84cc16] hover:bg-[#74b810] text-[#0f1d2b] font-black text-xs sm:text-sm shadow-md transition active:scale-95 shrink-0"
+            className="px-5 py-2.5 rounded-xl bg-[#84cc16] hover:bg-[#74b810] text-[#0f1d2b] font-black text-xs shadow-sm transition active:scale-95 shrink-0 text-center"
           >
-            <WhatsAppIcon className="w-4 h-4 fill-[#0f1d2b]" />
-            <span>Share Location on WhatsApp</span>
+            Check My Location on WhatsApp
           </a>
         </div>
 

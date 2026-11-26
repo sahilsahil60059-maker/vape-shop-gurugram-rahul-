@@ -1,43 +1,41 @@
 import { MetadataRoute } from "next";
 import { seoConfig } from "@/config/seo";
 import { allProducts } from "@/config/products";
+import { all20Blogs } from "@/config/blogs";
+import { gurgaon50Locations } from "@/config/locations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const currentDate = new Date("2026-11-24");
+  const currentDate = new Date("2026-11-26");
 
-  // Canonical homepage
-  const homeRoute = {
-    url: seoConfig.siteUrl,
-    lastModified: currentDate,
-    changeFrequency: "daily" as const,
-    priority: 1.0,
-  };
+  // Core Pages (4)
+  const coreRoutes = [
+    {
+      url: seoConfig.siteUrl,
+      lastModified: currentDate,
+      changeFrequency: "daily" as const,
+      priority: 1.0,
+    },
+    {
+      url: `${seoConfig.siteUrl}/locations`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${seoConfig.siteUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: "daily" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${seoConfig.siteUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+  ];
 
-  // Dedicated Locations Page
-  const locationsRoute = {
-    url: `${seoConfig.siteUrl}/locations`,
-    lastModified: currentDate,
-    changeFrequency: "weekly" as const,
-    priority: 0.9,
-  };
-
-  // Dedicated Blog Page (20 Guides)
-  const blogRoute = {
-    url: `${seoConfig.siteUrl}/blog`,
-    lastModified: currentDate,
-    changeFrequency: "daily" as const,
-    priority: 0.9,
-  };
-
-  // Dedicated Contact Page
-  const contactRoute = {
-    url: `${seoConfig.siteUrl}/contact`,
-    lastModified: currentDate,
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  };
-
-  // All 25 individual product pages for Google Indexing
+  // 52 Individual Product Pages for Google Indexing
   const productRoutes = allProducts.map((p) => ({
     url: `${seoConfig.siteUrl}/products/${p.slug}`,
     lastModified: currentDate,
@@ -45,5 +43,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [homeRoute, locationsRoute, blogRoute, contactRoute, ...productRoutes];
+  // 20 Dedicated Blog Guide Pages for Long-Tail Informational Queries
+  const blogRoutes = all20Blogs.map((b) => ({
+    url: `${seoConfig.siteUrl}/blog/${b.slug}`,
+    lastModified: currentDate,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  // 50 Dedicated Gurgaon Local Sector & Hub Pages for "Vape Shop Near Me" & "In [Sector]"
+  const locationRoutes = gurgaon50Locations.map((l) => ({
+    url: `${seoConfig.siteUrl}/locations/${l.slug}`,
+    lastModified: currentDate,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
+  // Total: 4 + 52 + 20 + 50 = 126 Static Indexable URLs
+  return [
+    ...coreRoutes,
+    ...locationRoutes,
+    ...productRoutes,
+    ...blogRoutes,
+  ];
 }

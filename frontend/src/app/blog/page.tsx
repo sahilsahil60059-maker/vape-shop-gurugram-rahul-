@@ -126,15 +126,9 @@ export default function BlogListPage() {
 
                 {/* Title */}
                 <h2 className="text-base sm:text-lg font-black text-[#192e42] group-hover:text-emerald-700 transition leading-snug">
-                  <a
-                    href={`https://wa.me/${seoConfig.whatsappNumber}?text=${encodeURIComponent(
-                      `Hi, I was reading your blog guide "${post.title}" and wanted more information.`
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link href={`/blog/${post.slug}`}>
                     {post.title}
-                  </a>
+                  </Link>
                 </h2>
 
                 {/* Excerpt */}
@@ -144,16 +138,12 @@ export default function BlogListPage() {
 
                 {/* Read Guide Link */}
                 <div className="pt-1">
-                  <a
-                    href={`https://wa.me/${seoConfig.whatsappNumber}?text=${encodeURIComponent(
-                      `Hi, I want to discuss recommendations for "${post.title}".`
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href={`/blog/${post.slug}`}
                     className="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 hover:text-[#192e42] transition"
                   >
                     <span>Read guide &rarr;</span>
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
