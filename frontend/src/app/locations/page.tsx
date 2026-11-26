@@ -15,16 +15,16 @@ import {
 import type { BreadcrumbList, ItemList, WithContext } from "schema-dts";
 
 export const metadata: Metadata = {
-  title: "Vape Shop Gurgaon Locations | 50+ Sector Hubs (30-Min Delivery)",
+  title: "Vape Shop Gurgaon Locations | 125+ Sector Hubs (30-Min Delivery)",
   description:
-    "Explore Vape Shop Gurgaon delivery hubs across 50+ sectors including DLF Phase 1-5, Cyber City, Golf Course Road, Sohna Road, and all Gurgaon pin codes. 20-45 mins doorstep delivery.",
+    "Explore Vape Shop Gurgaon delivery hubs across 125+ sectors including DLF Phase 1-5, Cyber City, Golf Course Road, Sohna Road, and all Gurgaon pin codes. 20-45 mins doorstep delivery.",
   alternates: {
     canonical: `${seoConfig.siteUrl}/locations`,
   },
   openGraph: {
-    title: "Vape Shop Gurgaon Locations — 50+ Sector Hubs & Express Delivery",
+    title: "Vape Shop Gurgaon Locations — 125+ Sector Hubs & Express Delivery",
     description:
-      "Rapid 20-45 minutes express vape delivery across 50 dedicated Gurgaon corridors. 100% genuine QR-verified vapes & discreet packaging.",
+      "Rapid 20-45 minutes express vape delivery across 125 dedicated Gurgaon corridors. 100% genuine QR-verified vapes & discreet packaging.",
     url: `${seoConfig.siteUrl}/locations`,
     siteName: seoConfig.shortName,
     locale: "en_IN",
@@ -34,15 +34,15 @@ export const metadata: Metadata = {
         url: `${seoConfig.siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Vape Shop Gurgaon Locations - 50+ Express Hubs",
+        alt: "Vape Shop Gurgaon Locations - 125+ Express Hubs",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vape Shop Gurgaon Locations | 50+ Express Hubs",
+    title: "Vape Shop Gurgaon Locations | 125+ Express Hubs",
     description:
-      "Rapid 20-45 mins doorstep vape delivery across 50+ Gurgaon sectors and corridors.",
+      "Rapid 20-45 mins doorstep vape delivery across 125+ Gurgaon sectors and corridors.",
     images: [`${seoConfig.siteUrl}/og-image.jpg`],
   },
 };
@@ -125,7 +125,7 @@ export default function LocationsPage() {
             <Zap className="w-3.5 h-3.5 text-[#84cc16] fill-current" />
             <span>Local Express Hub Network</span>
             <span className="text-slate-400">•</span>
-            <span className="text-emerald-700 font-bold">50 Active Gurgaon Corridors &amp; Sectors</span>
+            <span className="text-emerald-700 font-bold">125 Active Gurgaon Corridors &amp; Sectors</span>
           </div>
 
           {/* Primary SEO H1 */}
@@ -138,7 +138,7 @@ export default function LocationsPage() {
 
           {/* Description */}
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-            We operate 50 dedicated local logistics corridors across Gurugram to guarantee 15 to 45 minutes doorstep courier delivery. Select your neighborhood below to view specific pincode coverage, estimated dispatch times, and available inventory.
+            We operate 125 dedicated local logistics corridors across Gurugram to guarantee 15 to 45 minutes doorstep courier delivery. Select your neighborhood below to view specific pincode coverage, estimated dispatch times, and available inventory.
           </p>
         </div>
 

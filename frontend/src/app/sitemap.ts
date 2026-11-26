@@ -51,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // 50 Dedicated Gurgaon Local Sector & Hub Pages for "Vape Shop Near Me" & "In [Sector]"
+  // 125 Dedicated Gurgaon Local Sector & Hub Pages for "Vape Shop Near Me" & "In [Sector]"
   const locationRoutes = gurgaon50Locations.map((l) => ({
     url: `${seoConfig.siteUrl}/locations/${l.slug}`,
     lastModified: currentDate,
@@ -59,7 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // Total: 4 + 52 + 20 + 50 = 126 Static Indexable URLs
+  // Total: 4 + 52 + 20 + 125 = 201 Static Indexable URLs
   return [
     ...coreRoutes,
     ...locationRoutes,
