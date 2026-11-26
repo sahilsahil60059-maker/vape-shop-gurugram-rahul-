@@ -67,7 +67,7 @@ export interface SeoConfig {
   }[];
 }
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://vapeshopgurgaon.in";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://vapeshopingurugram.com";
 
 export const seoConfig: SeoConfig = {
   name: "Vape Shop Gurgaon | 30-Min Fast Delivery | 100% Authentic Vapes",
@@ -82,7 +82,7 @@ export const seoConfig: SeoConfig = {
   phoneRaw: "+919251097294",
   whatsappNumber: "919251097294",
   whatsappMessage: "Hi, I want to inquire about vape availability and express delivery in Gurgaon.",
-  email: "support@vapeshopgurgaon.in",
+  email: "support@vapeshopingurugram.com",
   priceRange: "₹₹",
   address: {
     streetAddress: "Shop No. 12, Ground Floor, Galleria Market, DLF Phase 4",

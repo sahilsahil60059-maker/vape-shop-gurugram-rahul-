@@ -13,7 +13,7 @@
 | Field | Verified Value | Status |
 | :--- | :--- | :--- |
 | **Business / Brand Name** | Vape Shop Gurgaon | Confirmed |
-| **Production Domain** | `https://vapeshopgurgaon.in` (Configurable via `NEXT_PUBLIC_SITE_URL`) | Configured |
+| **Production Domain** | `https://vapeshopingurugram.com` (Configurable via `NEXT_PUBLIC_SITE_URL`) | Configured |
 | **Primary Target Keyword** | Vape Shop Gurgaon | Implemented |
 | **Secondary Target Keywords** | Vape Store Gurgaon, Best Vape Shop DLF Gurgaon, 30-Min Vape Delivery Cyber City, Disposable Vape Gurgaon | Implemented |
 | **Target Geography** | Gurgaon / Gurugram, Haryana, India (`IN-HR`) | Implemented |

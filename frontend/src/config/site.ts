@@ -3,12 +3,12 @@ export const siteConfig = {
   shortName: "Vape Shop Gurgaon",
   description:
     "Looking for the best Vape Shop in Gurgaon? Authentic disposable vapes, pod systems, coils & e-liquids with instant 30-60 min delivery across DLF, Cyber City, Golf Course Road, and all Gurgaon sectors.",
-  url: "https://vapeshopgurgaon.in", // Replace with production domain
-  ogImage: "https://vapeshopgurgaon.in/og-image.jpg",
+  url: "https://vapeshopingurugram.com",
+  ogImage: "https://vapeshopingurugram.com/og-image.jpg",
   phone: "+91 92510 97294",
   whatsappNumber: "919251097294",
   whatsappMessage: "Hi, I want to check vape availability and same-day delivery in Gurgaon.",
-  email: "support@vapeshopgurgaon.in",
+  email: "support@vapeshopingurugram.com",
   address: {
     streetAddress: "Shop No. 12, Ground Floor, Galleria Market, DLF Phase 4",
     addressLocality: "Gurgaon",
