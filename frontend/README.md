@@ -22,7 +22,7 @@ High-ranking, conversion-focused, and SEO-structured website for **Vape Shop Gur
      - Sector 56 & 57 (`/locations/sector-56-57`)
      - Sohna Road (`/locations/sohna-road`)
      - Ambience Island (`/locations/ambience-island`)
-   - `/contact` - Official NAP details (Galleria Market DLF Phase 4), hours, and directions.
+   - `/contact` - Official NAP details (2, 1st Street, Basai Village, Sector 37C), hours, and directions.
 
 3. **Technical SEO**:
    - `sitemap.ts` (`/sitemap.xml`): Automatically maps all static & dynamic sector pages.

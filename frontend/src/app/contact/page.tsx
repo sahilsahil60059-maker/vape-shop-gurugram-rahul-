@@ -15,14 +15,14 @@ import {
 export const metadata: Metadata = {
   title: "Contact Vape Shop Gurgaon | Store Location & WhatsApp Support",
   description:
-    "Get in touch with Vape Shop Gurgaon. Instant WhatsApp order support, store location at Galleria Market DLF Phase 4, and 30-60 mins doorstep delivery across Gurugram.",
+    "Get in touch with Vape Shop Gurgaon. Instant WhatsApp order support, store location at 2, 1st Street, Basai Village, Sector 37C, and 30-60 mins doorstep delivery across Gurugram.",
   alternates: {
     canonical: `${seoConfig.siteUrl}/contact`,
   },
   openGraph: {
     title: "Contact Vape Shop Gurgaon | Store Location & WhatsApp Support",
     description:
-      "Instant WhatsApp order support, store location at Galleria Market DLF Phase 4, and 30-60 mins express delivery across Gurgaon.",
+      "Instant WhatsApp order support, store location at 2, 1st Street, Basai Village, Sector 37C, and 30-60 mins express delivery across Gurgaon.",
     url: `${seoConfig.siteUrl}/contact`,
     type: "website",
   },
@@ -48,7 +48,7 @@ export default function ContactPage() {
   )}`;
 
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    "Galleria Market DLF Phase 4 Gurgaon Haryana 122002"
+    "2, 1st Street, Basai Village, Sector 37C, Gurugram, Haryana 122001, India"
   )}`;
 
   // Schema.org Structured Data
@@ -57,7 +57,7 @@ export default function ContactPage() {
     "@type": "ContactPage",
     "name": "Contact Vape Shop Gurgaon",
     "url": `${seoConfig.siteUrl}/contact`,
-    "description": "Fastest way to reach Vape Shop Gurgaon is WhatsApp. Store located at Galleria Market, DLF Phase 4.",
+    "description": "Fastest way to reach Vape Shop Gurgaon is WhatsApp. Store located at 2, 1st Street, Basai Village, Sector 37C, Gurugram.",
     "mainEntity": {
       "@type": "VapeStore",
       "name": seoConfig.shortName,

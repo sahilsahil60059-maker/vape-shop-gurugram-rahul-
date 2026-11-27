@@ -18,7 +18,7 @@
 | **Secondary Target Keywords** | Vape Store Gurgaon, Best Vape Shop DLF Gurgaon, 30-Min Vape Delivery Cyber City, Disposable Vape Gurgaon | Implemented |
 | **Target Geography** | Gurgaon / Gurugram, Haryana, India (`IN-HR`) | Implemented |
 | **Target Language** | English (`en-IN`) | Implemented |
-| **Registered Store Address (NAP)** | Shop No. 12, Ground Floor, Galleria Market, DLF Phase 4, Gurgaon, Haryana 122002 | Implemented |
+| **Registered Store Address (NAP)** | 2, 1st Street, Basai Village, Sector 37C, Gurugram, Haryana 122001, India | Implemented |
 | **Geo-Coordinates** | Latitude: `28.4682`, Longitude: `77.0818` | Implemented |
 | **Contact Phone / WhatsApp** | Phone: `+91 98765 43210`, WhatsApp: `919876543210` | Implemented |
 | **Operating Hours** | Daily: 10:00 AM – 11:30 PM (Express Service Active) | Implemented |
@@ -117,10 +117,10 @@ npm run seo:audit -- --url http://localhost:3000
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Shop No. 12, Ground Floor, Galleria Market, DLF Phase 4",
-        "addressLocality": "Gurgaon",
+        "streetAddress": "2, 1st Street, Basai Village, Sector 37C",
+        "addressLocality": "Gurugram",
         "addressRegion": "Haryana",
-        "postalCode": "122002",
+        "postalCode": "122001",
         "addressCountry": "IN"
       },
       "geo": {
@@ -170,6 +170,6 @@ Before deploying this website to a live production server (e.g. Vercel, Netlify,
 3. [ ] **Google Rich Results Test**:
    - Test live URL with Google's Rich Results Tool (`https://search.google.com/test/rich-results`) to verify LocalBusiness and FAQ graph.
 4. [ ] **Google Business Profile (GBP)**:
-   - Ensure the public address in Galleria Market DLF Phase 4 and phone number match the Google Business Profile listing for local 3-pack rankings.
+   - Ensure the public address in Sector 37C Basai Village Gurugram and phone number match the Google Business Profile listing for local 3-pack rankings.
 5. [ ] **Analytics (Optional)**:
    - Add your GA4 Measurement ID (`G-XXXXXXXXXX`) in `.env.local` when ready.

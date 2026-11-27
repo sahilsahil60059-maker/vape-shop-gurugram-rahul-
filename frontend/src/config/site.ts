@@ -10,15 +10,15 @@ export const siteConfig = {
   whatsappMessage: "Hi, I want to check vape availability and same-day delivery in Gurgaon.",
   email: "support@vapeshopingurugram.com",
   address: {
-    streetAddress: "Shop No. 12, Ground Floor, Galleria Market, DLF Phase 4",
-    addressLocality: "Gurgaon",
+    streetAddress: "2, 1st Street, Basai Village, Sector 37C",
+    addressLocality: "Gurugram",
     addressRegion: "Haryana",
-    postalCode: "122002",
+    postalCode: "122001",
     addressCountry: "IN",
   },
   geo: {
-    latitude: 28.4682,
-    longitude: 77.0818,
+    latitude: 28.4637,
+    longitude: 76.9926,
   },
   openingHours: [
     "Mo-Su 10:00-23:30",
