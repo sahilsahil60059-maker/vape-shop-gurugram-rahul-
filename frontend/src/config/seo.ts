@@ -67,21 +67,24 @@ export interface SeoConfig {
   }[];
 }
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://vapeshopingurugram.com";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://vapeshopingurugram.com";
 
 export const seoConfig: SeoConfig = {
   name: "Vape Shop Gurgaon | 30-Min Fast Delivery | 100% Authentic Vapes",
   shortName: "Vape Shop Gurgaon",
-  tagline: "Gurgaon's #1 Rated Vape Store with Express 30-Minute Doorstep Delivery",
+  tagline:
+    "Gurgaon's #1 Rated Vape Store with Express 30-Minute Doorstep Delivery",
   description:
     "Best Vape Shop in Gurgaon. Buy authentic disposable vapes, pod kits & e-liquids with 30-min express delivery in DLF, Cyber City & all sectors. COD/UPI.",
   siteUrl,
   ogImage: `${siteUrl}/og-image.jpg`,
   locale: "en_IN",
   phone: "+91 92510 97294",
-  phoneRaw: "+919251097294",
-  whatsappNumber: "919251097294",
-  whatsappMessage: "Hi, I want to inquire about vape availability and express delivery in Gurgaon.",
+  phoneRaw: "+919829593886",
+  whatsappNumber: "919829593886",
+  whatsappMessage:
+    "Hi, I want to inquire about vape availability and express delivery in Gurgaon.",
   email: "support@vapeshopingurugram.com",
   priceRange: "₹₹",
   address: {
@@ -163,25 +166,29 @@ export const seoConfig: SeoConfig = {
   categories: [
     {
       name: "Disposable Vapes",
-      description: "Pre-filled, draw-activated, hassle-free disposable devices with up to 15,000 puffs.",
+      description:
+        "Pre-filled, draw-activated, hassle-free disposable devices with up to 15,000 puffs.",
       count: "50+ Flavors",
       bestFor: "On-the-go convenience",
     },
     {
       name: "Pod Systems & Kits",
-      description: "Refillable pod kits from top brands with adjustable airflow and long battery life.",
+      description:
+        "Refillable pod kits from top brands with adjustable airflow and long battery life.",
       count: "Top Brands",
       bestFor: "Daily vaping & cost savings",
     },
     {
       name: "E-Liquids & Nic Salts",
-      description: "Authentic imported 20mg and 50mg nic salt blends with rich fruit, menthol & tobacco notes.",
+      description:
+        "Authentic imported 20mg and 50mg nic salt blends with rich fruit, menthol & tobacco notes.",
       count: "80+ Varieties",
       bestFor: "Refillable pod devices",
     },
     {
       name: "Coils, Pods & Accessories",
-      description: "Genuine replacement pods, mesh coils, and charging cables with anti-counterfeit seals.",
+      description:
+        "Genuine replacement pods, mesh coils, and charging cables with anti-counterfeit seals.",
       count: "100% Genuine",
       bestFor: "Device maintenance",
     },
@@ -196,8 +203,13 @@ export const seoConfig: SeoConfig = {
       badge: "Gurgaon Bestseller",
       puffs: "6,000 Puffs",
       battery: "600mAh Type-C Recharging",
-      description: "Interchangeable pod design with mesh coil technology and crisp, long-lasting taste.",
-      features: ["Replaceable Pod System", "Mesh Coil Flavor Boost", "16ml Nicotine Salt"],
+      description:
+        "Interchangeable pod design with mesh coil technology and crisp, long-lasting taste.",
+      features: [
+        "Replaceable Pod System",
+        "Mesh Coil Flavor Boost",
+        "16ml Nicotine Salt",
+      ],
     },
     {
       id: "geek-bar-pulse",
@@ -208,8 +220,13 @@ export const seoConfig: SeoConfig = {
       badge: "Trending Tech",
       puffs: "15,000 Puffs (Pulse Mode: 7,500)",
       battery: "650mAh Fast Charging",
-      description: "World's first full-screen display disposable vape showing real-time e-liquid & battery status.",
-      features: ["Full Screen Display", "Dual Core Heating", "Dual Vaping Modes"],
+      description:
+        "World's first full-screen display disposable vape showing real-time e-liquid & battery status.",
+      features: [
+        "Full Screen Display",
+        "Dual Core Heating",
+        "Dual Vaping Modes",
+      ],
     },
     {
       id: "elf-bar-bc10000",
@@ -220,7 +237,8 @@ export const seoConfig: SeoConfig = {
       badge: "High Demand",
       puffs: "10,000 Puffs",
       battery: "620mAh Rechargeable",
-      description: "Features dry-hit prevention and real-time battery and e-liquid level indicators.",
+      description:
+        "Features dry-hit prevention and real-time battery and e-liquid level indicators.",
       features: ["Dry Hit Prevention", "Illuminated Display", "Quoq Mesh Coil"],
     },
     {
@@ -231,8 +249,13 @@ export const seoConfig: SeoConfig = {
       mrp: "₹6,800",
       badge: "Pro Choice",
       battery: "900mAh Battery",
-      description: "The flagship Caliburn pod with OLED display, precise wattage control, and dual airflow.",
-      features: ["OLED Display", "Dual Airflow System", "Integrated Coil Cartridge"],
+      description:
+        "The flagship Caliburn pod with OLED display, precise wattage control, and dual airflow.",
+      features: [
+        "OLED Display",
+        "Dual Airflow System",
+        "Integrated Coil Cartridge",
+      ],
     },
   ],
   faqs: [
@@ -262,7 +285,8 @@ export const seoConfig: SeoConfig = {
         "We accept Cash on Delivery (COD), UPI (Google Pay, PhonePe, Paytm), and instant bank transfers upon delivery. You only pay after inspecting the package.",
     },
     {
-      question: "What is the legal age requirement to buy from Vape Shop Gurgaon?",
+      question:
+        "What is the legal age requirement to buy from Vape Shop Gurgaon?",
       answer:
         "You must be 18 years of age or older. We strictly adhere to age restriction policies and our delivery personnel may request government ID verification.",
     },

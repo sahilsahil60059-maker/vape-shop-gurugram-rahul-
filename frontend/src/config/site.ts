@@ -6,8 +6,9 @@ export const siteConfig = {
   url: "https://vapeshopingurugram.com",
   ogImage: "https://vapeshopingurugram.com/og-image.jpg",
   phone: "+91 92510 97294",
-  whatsappNumber: "919251097294",
-  whatsappMessage: "Hi, I want to check vape availability and same-day delivery in Gurgaon.",
+  whatsappNumber: "919829593886",
+  whatsappMessage:
+    "Hi, I want to check vape availability and same-day delivery in Gurgaon.",
   email: "support@vapeshopingurugram.com",
   address: {
     streetAddress: "2, 1st Street, Basai Village, Sector 37C",
@@ -20,9 +21,7 @@ export const siteConfig = {
     latitude: 28.4637,
     longitude: 76.9926,
   },
-  openingHours: [
-    "Mo-Su 10:00-23:30",
-  ],
+  openingHours: ["Mo-Su 10:00-23:30"],
   priceRange: "₹₹",
   rating: {
     ratingValue: "4.9",
@@ -54,9 +53,21 @@ export const siteConfig = {
     { name: "Ambience Island", slug: "ambience-island" },
   ],
   categories: [
-    { name: "Disposable Vapes", slug: "disposable-vapes", count: "50+ Flavors" },
+    {
+      name: "Disposable Vapes",
+      slug: "disposable-vapes",
+      count: "50+ Flavors",
+    },
     { name: "Pod Systems & Kits", slug: "pod-systems", count: "Top Brands" },
-    { name: "E-Liquids & Nic Salts", slug: "e-liquids", count: "Premium Blends" },
-    { name: "Replacement Coils & Pods", slug: "coils-accessories", count: "100% Genuine" },
+    {
+      name: "E-Liquids & Nic Salts",
+      slug: "e-liquids",
+      count: "Premium Blends",
+    },
+    {
+      name: "Replacement Coils & Pods",
+      slug: "coils-accessories",
+      count: "100% Genuine",
+    },
   ],
 };
